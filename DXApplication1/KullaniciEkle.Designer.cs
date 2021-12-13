@@ -39,18 +39,18 @@ namespace DXApplication1
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.EmailTxtEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ParolaTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.EkleBtn = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmailTxtEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ParolaTxtEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
@@ -138,19 +138,19 @@ namespace DXApplication1
             this.textEdit1.Size = new System.Drawing.Size(125, 22);
             this.textEdit1.TabIndex = 9;
             // 
-            // textEdit2
+            // EmailTxtEdit
             // 
-            this.textEdit2.Location = new System.Drawing.Point(160, 65);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(125, 22);
-            this.textEdit2.TabIndex = 10;
+            this.EmailTxtEdit.Location = new System.Drawing.Point(160, 65);
+            this.EmailTxtEdit.Name = "EmailTxtEdit";
+            this.EmailTxtEdit.Size = new System.Drawing.Size(125, 22);
+            this.EmailTxtEdit.TabIndex = 10;
             // 
-            // textEdit3
+            // ParolaTxtEdit
             // 
-            this.textEdit3.Location = new System.Drawing.Point(160, 116);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(125, 22);
-            this.textEdit3.TabIndex = 11;
+            this.ParolaTxtEdit.Location = new System.Drawing.Point(160, 116);
+            this.ParolaTxtEdit.Name = "ParolaTxtEdit";
+            this.ParolaTxtEdit.Size = new System.Drawing.Size(125, 22);
+            this.ParolaTxtEdit.TabIndex = 11;
             // 
             // textEdit6
             // 
@@ -199,28 +199,29 @@ namespace DXApplication1
             this.pictureEdit1.Size = new System.Drawing.Size(100, 30);
             this.pictureEdit1.TabIndex = 19;
             // 
-            // simpleButton1
+            // EkleBtn
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(572, 464);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
-            this.simpleButton1.TabIndex = 20;
-            this.simpleButton1.Text = "Ekle";
+            this.EkleBtn.Location = new System.Drawing.Point(572, 464);
+            this.EkleBtn.Name = "EkleBtn";
+            this.EkleBtn.Size = new System.Drawing.Size(94, 29);
+            this.EkleBtn.TabIndex = 20;
+            this.EkleBtn.Text = "Ekle";
+            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
             // KullaniciEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 530);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.EkleBtn);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.comboBoxEdit2);
             this.Controls.Add(this.comboBoxEdit1);
             this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.textEdit4);
             this.Controls.Add(this.textEdit6);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.ParolaTxtEdit);
+            this.Controls.Add(this.EmailTxtEdit);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
@@ -234,8 +235,8 @@ namespace DXApplication1
             this.Name = "KullaniciEkle";
             this.Text = "Kullanıcı Ekle";
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmailTxtEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ParolaTxtEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
@@ -259,14 +260,14 @@ namespace DXApplication1
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit EmailTxtEdit;
+        private DevExpress.XtraEditors.TextEdit ParolaTxtEdit;
         private DevExpress.XtraEditors.TextEdit textEdit6;
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton EkleBtn;
     }
 }
