@@ -66,7 +66,6 @@ namespace DXApplication1
                             MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
-
                     }
                     catch (Exception hata)
                     {
