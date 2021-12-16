@@ -1,12 +1,10 @@
-﻿using DevExpress.LookAndFeel;
-using DevExpress.Skins;
-using DevExpress.UserSkins;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DXApplication1
+namespace Argesys.Console
 {
     static class Program
     {
@@ -18,8 +16,7 @@ namespace DXApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
-
+            Application.Run(new Form1());
         }
     }
 }

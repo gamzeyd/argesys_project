@@ -43,14 +43,14 @@ namespace DXApplication1
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(67, 92);
+            this.textEdit1.Location = new System.Drawing.Point(38, 53);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(188, 22);
             this.textEdit1.TabIndex = 0;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(67, 58);
+            this.labelControl1.Location = new System.Drawing.Point(38, 31);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(68, 16);
             this.labelControl1.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace DXApplication1
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(67, 136);
+            this.labelControl2.Location = new System.Drawing.Point(38, 94);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(27, 16);
             this.labelControl2.TabIndex = 3;
@@ -66,14 +66,14 @@ namespace DXApplication1
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(67, 178);
+            this.textEdit2.Location = new System.Drawing.Point(38, 116);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(188, 22);
             this.textEdit2.TabIndex = 2;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(112, 215);
+            this.simpleButton1.Location = new System.Drawing.Point(132, 155);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(94, 29);
             this.simpleButton1.TabIndex = 4;
@@ -82,7 +82,7 @@ namespace DXApplication1
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(167, 1);
+            this.labelControl3.Location = new System.Drawing.Point(87, 9);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(54, 16);
             this.labelControl3.TabIndex = 5;
@@ -97,7 +97,7 @@ namespace DXApplication1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 412);
+            this.ClientSize = new System.Drawing.Size(270, 229);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.labelControl2);

@@ -38,25 +38,25 @@ namespace DXApplication1
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.AdSoyadTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.EmailTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.ParolaTxtEdit = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.TelNoTxtEdit = new DevExpress.XtraEditors.TextEdit();
+            this.BilgiEmailTxtEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.BilgiEmailTxtEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.FirmaComboxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.MarkaComboxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ResimEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.EkleBtn = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdSoyadTxtEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmailTxtEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ParolaTxtEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TelNoTxtEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BilgiEmailTxtEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BilgiEmailTxtEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirmaComboxEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkaComboxEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResimEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -131,12 +131,12 @@ namespace DXApplication1
             this.labelControl9.TabIndex = 8;
             this.labelControl9.Text = "Resim";
             // 
-            // textEdit1
+            // AdSoyadTxtEdit
             // 
-            this.textEdit1.Location = new System.Drawing.Point(160, 18);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(125, 22);
-            this.textEdit1.TabIndex = 9;
+            this.AdSoyadTxtEdit.Location = new System.Drawing.Point(160, 18);
+            this.AdSoyadTxtEdit.Name = "AdSoyadTxtEdit";
+            this.AdSoyadTxtEdit.Size = new System.Drawing.Size(125, 22);
+            this.AdSoyadTxtEdit.TabIndex = 9;
             // 
             // EmailTxtEdit
             // 
@@ -152,52 +152,52 @@ namespace DXApplication1
             this.ParolaTxtEdit.Size = new System.Drawing.Size(125, 22);
             this.ParolaTxtEdit.TabIndex = 11;
             // 
-            // textEdit6
+            // TelNoTxtEdit
             // 
-            this.textEdit6.Location = new System.Drawing.Point(160, 303);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(125, 22);
-            this.textEdit6.TabIndex = 14;
+            this.TelNoTxtEdit.Location = new System.Drawing.Point(160, 303);
+            this.TelNoTxtEdit.Name = "TelNoTxtEdit";
+            this.TelNoTxtEdit.Size = new System.Drawing.Size(125, 22);
+            this.TelNoTxtEdit.TabIndex = 14;
             // 
-            // textEdit4
+            // BilgiEmailTxtEdit1
             // 
-            this.textEdit4.Location = new System.Drawing.Point(160, 354);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(125, 22);
-            this.textEdit4.TabIndex = 15;
+            this.BilgiEmailTxtEdit1.Location = new System.Drawing.Point(160, 354);
+            this.BilgiEmailTxtEdit1.Name = "BilgiEmailTxtEdit1";
+            this.BilgiEmailTxtEdit1.Size = new System.Drawing.Size(125, 22);
+            this.BilgiEmailTxtEdit1.TabIndex = 15;
             // 
-            // textEdit5
+            // BilgiEmailTxtEdit2
             // 
-            this.textEdit5.Location = new System.Drawing.Point(160, 416);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(125, 22);
-            this.textEdit5.TabIndex = 16;
+            this.BilgiEmailTxtEdit2.Location = new System.Drawing.Point(160, 416);
+            this.BilgiEmailTxtEdit2.Name = "BilgiEmailTxtEdit2";
+            this.BilgiEmailTxtEdit2.Size = new System.Drawing.Size(125, 22);
+            this.BilgiEmailTxtEdit2.TabIndex = 16;
             // 
-            // comboBoxEdit1
+            // FirmaComboxEdit
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(160, 174);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.FirmaComboxEdit.Location = new System.Drawing.Point(160, 174);
+            this.FirmaComboxEdit.Name = "FirmaComboxEdit";
+            this.FirmaComboxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(125, 22);
-            this.comboBoxEdit1.TabIndex = 17;
+            this.FirmaComboxEdit.Size = new System.Drawing.Size(125, 22);
+            this.FirmaComboxEdit.TabIndex = 17;
             // 
-            // comboBoxEdit2
+            // MarkaComboxEdit
             // 
-            this.comboBoxEdit2.Location = new System.Drawing.Point(160, 237);
-            this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.MarkaComboxEdit.Location = new System.Drawing.Point(160, 237);
+            this.MarkaComboxEdit.Name = "MarkaComboxEdit";
+            this.MarkaComboxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit2.Size = new System.Drawing.Size(125, 22);
-            this.comboBoxEdit2.TabIndex = 18;
+            this.MarkaComboxEdit.Size = new System.Drawing.Size(125, 22);
+            this.MarkaComboxEdit.TabIndex = 18;
             // 
-            // pictureEdit1
+            // ResimEdit1
             // 
-            this.pictureEdit1.Location = new System.Drawing.Point(160, 457);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(100, 30);
-            this.pictureEdit1.TabIndex = 19;
+            this.ResimEdit1.Location = new System.Drawing.Point(160, 457);
+            this.ResimEdit1.Name = "ResimEdit1";
+            this.ResimEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.ResimEdit1.Size = new System.Drawing.Size(100, 30);
+            this.ResimEdit1.TabIndex = 19;
             // 
             // EkleBtn
             // 
@@ -214,15 +214,15 @@ namespace DXApplication1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 530);
             this.Controls.Add(this.EkleBtn);
-            this.Controls.Add(this.pictureEdit1);
-            this.Controls.Add(this.comboBoxEdit2);
-            this.Controls.Add(this.comboBoxEdit1);
-            this.Controls.Add(this.textEdit5);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit6);
+            this.Controls.Add(this.ResimEdit1);
+            this.Controls.Add(this.MarkaComboxEdit);
+            this.Controls.Add(this.FirmaComboxEdit);
+            this.Controls.Add(this.BilgiEmailTxtEdit2);
+            this.Controls.Add(this.BilgiEmailTxtEdit1);
+            this.Controls.Add(this.TelNoTxtEdit);
             this.Controls.Add(this.ParolaTxtEdit);
             this.Controls.Add(this.EmailTxtEdit);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.AdSoyadTxtEdit);
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.labelControl7);
@@ -234,15 +234,15 @@ namespace DXApplication1
             this.Controls.Add(this.labelControl1);
             this.Name = "KullaniciEkle";
             this.Text = "Kullanıcı Ekle";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdSoyadTxtEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmailTxtEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ParolaTxtEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TelNoTxtEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BilgiEmailTxtEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BilgiEmailTxtEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirmaComboxEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkaComboxEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResimEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,15 +259,15 @@ namespace DXApplication1
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit AdSoyadTxtEdit;
         private DevExpress.XtraEditors.TextEdit EmailTxtEdit;
         private DevExpress.XtraEditors.TextEdit ParolaTxtEdit;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.TextEdit TelNoTxtEdit;
+        private DevExpress.XtraEditors.TextEdit BilgiEmailTxtEdit1;
+        private DevExpress.XtraEditors.TextEdit BilgiEmailTxtEdit2;
+        private DevExpress.XtraEditors.ComboBoxEdit FirmaComboxEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit MarkaComboxEdit;
+        private DevExpress.XtraEditors.PictureEdit ResimEdit1;
         private DevExpress.XtraEditors.SimpleButton EkleBtn;
     }
 }

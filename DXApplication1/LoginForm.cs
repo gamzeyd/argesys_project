@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DXApplication1
 {
     public partial class LoginForm : DevExpress.XtraEditors.XtraForm
@@ -48,6 +49,7 @@ namespace DXApplication1
                         cn.Close();
                     }
                     cn.Open();
+
 
                     try
                     {

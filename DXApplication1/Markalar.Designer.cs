@@ -36,10 +36,10 @@ namespace DXApplication1
             this.islemler = new DevExpress.XtraGrid.Columns.GridColumn();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.MarkaTxtEdit = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkaTxtEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -95,6 +95,7 @@ namespace DXApplication1
             this.simpleButton1.Size = new System.Drawing.Size(94, 29);
             this.simpleButton1.TabIndex = 6;
             this.simpleButton1.Text = "Ekle";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // labelControl1
             // 
@@ -104,12 +105,12 @@ namespace DXApplication1
             this.labelControl1.TabIndex = 5;
             this.labelControl1.Text = "Marka Adı";
             // 
-            // textEdit1
+            // MarkaTxtEdit
             // 
-            this.textEdit1.Location = new System.Drawing.Point(99, 18);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(230, 22);
-            this.textEdit1.TabIndex = 4;
+            this.MarkaTxtEdit.Location = new System.Drawing.Point(99, 18);
+            this.MarkaTxtEdit.Name = "MarkaTxtEdit";
+            this.MarkaTxtEdit.Size = new System.Drawing.Size(230, 22);
+            this.MarkaTxtEdit.TabIndex = 4;
             // 
             // Markalar
             // 
@@ -119,12 +120,12 @@ namespace DXApplication1
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.MarkaTxtEdit);
             this.Name = "Markalar";
             this.Text = "Markalar";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkaTxtEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,6 +140,6 @@ namespace DXApplication1
         private DevExpress.XtraGrid.Columns.GridColumn islemler;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit MarkaTxtEdit;
     }
 }
