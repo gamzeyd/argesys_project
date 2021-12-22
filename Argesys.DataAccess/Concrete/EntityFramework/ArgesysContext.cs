@@ -13,5 +13,6 @@ namespace Argesys.DataAccess.Concrete.EntityFramework
    public class ArgesysContext:DbContext
     {
         public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Categories { get; set; }
     }
 }
