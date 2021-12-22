@@ -1,4 +1,5 @@
-﻿using Argesys.DataAccess.Concrete.EntityFramework;
+﻿using Argesys.Business.Abstract;
+using Argesys.DataAccess.Concrete.EntityFramework;
 using Argesys.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Argesys.Business.Concrete
 {
-   public class ProductManager
+   public class ProductManager : IProductService 
     {
         private EfProductDal _productDal;
         //EfProductDal _productDal = new EfProductDal();

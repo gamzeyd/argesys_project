@@ -1,4 +1,5 @@
-﻿using Argesys.Business.Concrete;
+﻿using Argesys.Business.Abstract;
+using Argesys.Business.Concrete;
 using Argesys.DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -16,13 +17,14 @@ namespace Argesys.WinUI
         public Form1()
         {
             InitializeComponent();
+           _productService  = new ProductManager(new EfProductDal());
         }
-
+      private IProductService _productService;
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            ProductManager productManager = new ProductManager(new EfProductDal());
-            gridControl1.DataSource = productManager.GetAll();
+            
+            gridControl1.DataSource = _productService.GetAll();
 
         }
     }
