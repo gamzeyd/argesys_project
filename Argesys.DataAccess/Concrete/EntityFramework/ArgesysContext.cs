@@ -8,9 +8,9 @@ using System.Web.Services.Description;
 using Argesys.Entities.Concrete;
 
 
-namespace Argesys.DataAccess.Concrete
+namespace Argesys.DataAccess.Concrete.EntityFramework
 {
-   public class ArgesysContext:DbContext 
+   public class ArgesysContext:DbContext
     {
         public DbSet<Product> Products { get; set; }
     }

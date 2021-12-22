@@ -109,6 +109,10 @@
       <Project>{C142D37A-4A64-4AD8-A24F-6434D1B89580}</Project>
       <Name>Argesys.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Argesys.DataAccess\Argesys.DataAccess.csproj">
+      <Project>{9345B527-1D2D-4579-B6AE-356C7EABD45C}</Project>
+      <Name>Argesys.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Argesys.Entities\Argesys.Entities.csproj">
       <Project>{e135d54f-e7f8-40d5-a1e6-0bc3ba5e8291}</Project>
       <Name>Argesys.Entities</Name>

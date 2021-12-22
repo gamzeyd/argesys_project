@@ -1,32 +1,35 @@
-﻿using Argesys.Entities.Concrete;
+﻿using Argesys.DataAccess.Abstract;
+using Argesys.DataAccess.Concrete.EntityFramework;
+using Argesys.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Argesys.DataAccess.Concrete
+namespace Argesys.DataAccess.Concrete.EntityFramework
 {
-    public class ProductDal
+    public class EfProductDal : IProductDal
     {
 
         public List<Product> GetAll()
         {
-            using (ArgesysContext context = new ArgesysContext())
-
-
+            List<Product> products = new List<Product>
+           // using (ArgesysContext context = new ArgesysContext())
             {
-                return context.Products.ToList();
+                //return context.Products.ToList();
 
-            }
+                new Product {ServiceId=2, ServiceName="Gamzeeee", AdvertisingFirmId=44,  }
+               
+
+            };
+        return products;
               
         }
 
         public Product Get(int id)
         {
             using (ArgesysContext context = new ArgesysContext())
-
-
             {
                 return context.Products.SingleOrDefault(p => p.ServiceId == id);
 

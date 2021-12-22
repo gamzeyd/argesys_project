@@ -57,22 +57,6 @@ namespace Argesys.WinUI
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.dgwProduct = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ReklamFirmasi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ArizaTarihi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.IstasyonIsmi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.İletisimYetkilisi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.KurumsalMarka = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Il = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Ilce = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Adres = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Aciklamasi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Resim1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Resim2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Resim3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Durumu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Islemler = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -84,6 +68,11 @@ namespace Argesys.WinUI
             this.kULLANICILARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rAPORLARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aRGYSİLETİŞİMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
@@ -95,10 +84,10 @@ namespace Argesys.WinUI
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -320,135 +309,6 @@ namespace Argesys.WinUI
             this.labelControl18.TabIndex = 27;
             this.labelControl18.Text = "7";
             // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 300);
-            this.gridControl1.MainView = this.dgwProduct;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(949, 424);
-            this.gridControl1.TabIndex = 28;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.dgwProduct});
-            // 
-            // dgwProduct
-            // 
-            this.dgwProduct.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ReklamFirmasi,
-            this.ArizaTarihi,
-            this.IstasyonIsmi,
-            this.İletisimYetkilisi,
-            this.KurumsalMarka,
-            this.Il,
-            this.Ilce,
-            this.Adres,
-            this.Aciklamasi,
-            this.Resim1,
-            this.Resim2,
-            this.Resim3,
-            this.Durumu,
-            this.Islemler});
-            this.dgwProduct.GridControl = this.gridControl1;
-            this.dgwProduct.Name = "dgwProduct";
-            this.dgwProduct.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.ShowAlways;
-            // 
-            // ReklamFirmasi
-            // 
-            this.ReklamFirmasi.Caption = "Reklam Firması";
-            this.ReklamFirmasi.MinWidth = 25;
-            this.ReklamFirmasi.Name = "ReklamFirmasi";
-            this.ReklamFirmasi.Width = 114;
-            // 
-            // ArizaTarihi
-            // 
-            this.ArizaTarihi.Caption = "Arıza Tarihi";
-            this.ArizaTarihi.MinWidth = 25;
-            this.ArizaTarihi.Name = "ArizaTarihi";
-            this.ArizaTarihi.Width = 79;
-            // 
-            // IstasyonIsmi
-            // 
-            this.IstasyonIsmi.Caption = "İstasyon İsmi ";
-            this.IstasyonIsmi.MinWidth = 25;
-            this.IstasyonIsmi.Name = "IstasyonIsmi";
-            this.IstasyonIsmi.Width = 93;
-            // 
-            // İletisimYetkilisi
-            // 
-            this.İletisimYetkilisi.Caption = "İletişim Yetkilisi";
-            this.İletisimYetkilisi.MinWidth = 25;
-            this.İletisimYetkilisi.Name = "İletisimYetkilisi";
-            this.İletisimYetkilisi.Width = 102;
-            // 
-            // KurumsalMarka
-            // 
-            this.KurumsalMarka.Caption = "Kurumsal Marka";
-            this.KurumsalMarka.MinWidth = 25;
-            this.KurumsalMarka.Name = "KurumsalMarka";
-            this.KurumsalMarka.Width = 107;
-            // 
-            // Il
-            // 
-            this.Il.Caption = "İl";
-            this.Il.MinWidth = 25;
-            this.Il.Name = "Il";
-            this.Il.Width = 37;
-            // 
-            // Ilce
-            // 
-            this.Ilce.Caption = "İlçe";
-            this.Ilce.MinWidth = 25;
-            this.Ilce.Name = "Ilce";
-            this.Ilce.Width = 48;
-            // 
-            // Adres
-            // 
-            this.Adres.Caption = "Adres";
-            this.Adres.MinWidth = 25;
-            this.Adres.Name = "Adres";
-            this.Adres.Width = 48;
-            // 
-            // Aciklamasi
-            // 
-            this.Aciklamasi.Caption = "Açıklaması";
-            this.Aciklamasi.MinWidth = 25;
-            this.Aciklamasi.Name = "Aciklamasi";
-            this.Aciklamasi.Width = 74;
-            // 
-            // Resim1
-            // 
-            this.Resim1.Caption = "Resim 1";
-            this.Resim1.MinWidth = 25;
-            this.Resim1.Name = "Resim1";
-            this.Resim1.Width = 63;
-            // 
-            // Resim2
-            // 
-            this.Resim2.Caption = "Resim 2";
-            this.Resim2.MinWidth = 25;
-            this.Resim2.Name = "Resim2";
-            this.Resim2.Width = 59;
-            // 
-            // Resim3
-            // 
-            this.Resim3.Caption = "Resim 3";
-            this.Resim3.MinWidth = 25;
-            this.Resim3.Name = "Resim3";
-            this.Resim3.Width = 57;
-            // 
-            // Durumu
-            // 
-            this.Durumu.Caption = "Durumu";
-            this.Durumu.MinWidth = 25;
-            this.Durumu.Name = "Durumu";
-            this.Durumu.Width = 61;
-            // 
-            // Islemler
-            // 
-            this.Islemler.Caption = "İşlemler";
-            this.Islemler.MinWidth = 25;
-            this.Islemler.Name = "Islemler";
-            this.Islemler.Width = 68;
-            // 
             // labelControl19
             // 
             this.labelControl19.Location = new System.Drawing.Point(787, 214);
@@ -480,7 +340,7 @@ namespace Argesys.WinUI
             this.aRGYSİLETİŞİMToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(961, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1362, 28);
             this.menuStrip1.TabIndex = 31;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -534,14 +394,64 @@ namespace Argesys.WinUI
             this.aRGYSİLETİŞİMToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
             this.aRGYSİLETİŞİMToolStripMenuItem.Text = "ARGYS İLETİŞİM";
             // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(39, 299);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(843, 328);
+            this.gridControl1.TabIndex = 61;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn3,
+            this.gridColumn2,
+            this.gridColumn1});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.ShowAlways;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "gridColumn3";
+            this.gridColumn3.FieldName = "AdvertisingFirmId";
+            this.gridColumn3.MinWidth = 25;
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 0;
+            this.gridColumn3.Width = 94;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "gridColumn2";
+            this.gridColumn2.FieldName = "ServiceName";
+            this.gridColumn2.MinWidth = 25;
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 94;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "gridColumn1";
+            this.gridColumn1.FieldName = "ServiceId";
+            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 2;
+            this.gridColumn1.Width = 94;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 705);
+            this.ClientSize = new System.Drawing.Size(1362, 705);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.labelControl19);
-            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl18);
             this.Controls.Add(this.labelControl17);
             this.Controls.Add(this.labelControl16);
@@ -587,11 +497,11 @@ namespace Argesys.WinUI
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -627,22 +537,6 @@ namespace Argesys.WinUI
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView dgwProduct;
-        private DevExpress.XtraGrid.Columns.GridColumn ReklamFirmasi;
-        private DevExpress.XtraGrid.Columns.GridColumn ArizaTarihi;
-        private DevExpress.XtraGrid.Columns.GridColumn IstasyonIsmi;
-        private DevExpress.XtraGrid.Columns.GridColumn İletisimYetkilisi;
-        private DevExpress.XtraGrid.Columns.GridColumn KurumsalMarka;
-        private DevExpress.XtraGrid.Columns.GridColumn Il;
-        private DevExpress.XtraGrid.Columns.GridColumn Ilce;
-        private DevExpress.XtraGrid.Columns.GridColumn Adres;
-        private DevExpress.XtraGrid.Columns.GridColumn Aciklamasi;
-        private DevExpress.XtraGrid.Columns.GridColumn Resim1;
-        private DevExpress.XtraGrid.Columns.GridColumn Resim2;
-        private DevExpress.XtraGrid.Columns.GridColumn Resim3;
-        private DevExpress.XtraGrid.Columns.GridColumn Durumu;
-        private DevExpress.XtraGrid.Columns.GridColumn Islemler;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.SearchControl searchControl1;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -654,6 +548,11 @@ namespace Argesys.WinUI
         private System.Windows.Forms.ToolStripMenuItem kULLANICILARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rAPORLARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aRGYSİLETİŞİMToolStripMenuItem;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
     }
 }
 
