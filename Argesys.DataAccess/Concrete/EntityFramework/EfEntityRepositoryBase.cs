@@ -33,8 +33,9 @@ namespace Argesys.DataAccess.Concrete.EntityFramework
                 DeletedEntity.State = EntityState.Deleted;
                 context.SaveChanges();
             }
+        }
 
-            public TEntity Get(Expression<Func<TEntity, bool>> filter)
+        public TEntity Get(Expression<Func<TEntity, bool>> filter)
             {
 
                 using (TContext context = new TContext())
@@ -67,21 +68,8 @@ namespace Argesys.DataAccess.Concrete.EntityFramework
 
                 }
             }
-        }
+        
 
-        public TEntity Get(Expression<Func<TEntity, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(TEntity entity)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

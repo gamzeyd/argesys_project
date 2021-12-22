@@ -22,10 +22,9 @@ namespace Argesys.WinUI
       private IProductService _productService;
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            
             gridControl1.DataSource = _productService.GetAll();
 
         }
     }
 }
+                                      

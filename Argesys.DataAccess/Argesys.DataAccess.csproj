@@ -54,7 +54,6 @@
   <ItemGroup>
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IEntityRepository.cs" />
-    <Compile Include="Abs\Interface1.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\EntityFramework\ArgesysContext.cs" />
