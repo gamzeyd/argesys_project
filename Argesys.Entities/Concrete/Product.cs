@@ -1,15 +1,12 @@
 ﻿using Argesys.Entities.Abstract;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Argesys.Entities.Concrete
 {
-   public  class Product: IEntity
+    public  class Product: IEntity
     {
-
+        [Key]
         public int Service_Id { get; set; }
         public string Service_Name { get; set; }
         public int Advertising_Firm_Id { get; set; }

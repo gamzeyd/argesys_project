@@ -77,11 +77,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\ArgesysIletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArgesysIletisim.Designer.cs">
+      <DependentUpon>ArgesysIletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ArizaKayitlarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArizaKayitlarim.Designer.cs">
+      <DependentUpon>ArizaKayitlarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ArizaTipleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArizaTipleri.Designer.cs">
+      <DependentUpon>ArizaTipleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciEkle.Designer.cs">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listele.Designer.cs">
+      <DependentUpon>Listele.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -89,13 +119,64 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Markalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Markalar.Designer.cs">
+      <DependentUpon>Markalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Raporlar.Designer.cs">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReklamFirmalari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReklamFirmalari.Designer.cs">
+      <DependentUpon>ReklamFirmalari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YeniArizaKaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YeniArizaKaydi.Designer.cs">
+      <DependentUpon>YeniArizaKaydi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ArgesysIletisim.resx">
+      <DependentUpon>ArgesysIletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ArizaKayitlarim.resx">
+      <DependentUpon>ArizaKayitlarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ArizaTipleri.resx">
+      <DependentUpon>ArizaTipleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciEkle.resx">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listele.resx">
+      <DependentUpon>Listele.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Markalar.resx">
+      <DependentUpon>Markalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Raporlar.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReklamFirmalari.resx">
+      <DependentUpon>ReklamFirmalari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YeniArizaKaydi.resx">
+      <DependentUpon>YeniArizaKaydi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -130,7 +211,7 @@
       <Name>Argesys.Business</Name>
     </ProjectReference>
     <ProjectReference Include="..\Argesys.DataAccess\Argesys.DataAccess.csproj">
-      <Project>{9345B527-1D2D-4579-B6AE-356C7EABD45C}</Project>
+      <Project>{9345b527-1d2d-4579-b6ae-356c7eabd45c}</Project>
       <Name>Argesys.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\Argesys.Entities\Argesys.Entities.csproj">

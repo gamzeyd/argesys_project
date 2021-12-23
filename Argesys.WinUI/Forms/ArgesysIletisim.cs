@@ -9,13 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DXApplication1
+namespace Argesys.WinUI
 {
-    public partial class Listele : DevExpress.XtraEditors.XtraForm
+    public partial class ArgesysIletisim : DevExpress.XtraEditors.XtraForm
     {
-        public Listele()
+        public ArgesysIletisim()
         {
             InitializeComponent();
+        }
+
+        private void ArgesysIletisim_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

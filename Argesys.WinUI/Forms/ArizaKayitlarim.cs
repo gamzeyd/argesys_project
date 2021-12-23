@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DXApplication1
+namespace Argesys.WinUI.Forms
 {
     public partial class ArizaKayitlarim : DevExpress.XtraEditors.XtraForm
     {

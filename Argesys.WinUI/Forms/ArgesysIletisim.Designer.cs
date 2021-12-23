@@ -1,5 +1,5 @@
 ﻿
-namespace DXApplication1
+namespace Argesys.WinUI
 {
     partial class ArgesysIletisim
     {

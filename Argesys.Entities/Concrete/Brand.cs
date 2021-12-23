@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Argesys.Entities.Concrete
 {
-   public  class Category:IEntity 
+    public class Brand : IEntity
     {
         [Key]
-        public int Category_Id { get; set; }
-        public string Category_Name { get; set; }
-
+    
+        public int Brand_Id { get; set; }
+        public string Brand_Name { get; set; }
     }
 }

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace Argesys.WinUI
+namespace Argesys.WinUI.Forms
 {
     public partial class LoginForm : DevExpress.XtraEditors.XtraForm
     {

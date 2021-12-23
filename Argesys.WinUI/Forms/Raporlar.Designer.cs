@@ -1,7 +1,7 @@
 ﻿
-namespace DXApplication1
+namespace Argesys.WinUI.Forms
 {
-    partial class ArizaKayitlarim
+    partial class Raporlar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,14 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -46,7 +54,6 @@ namespace DXApplication1
             this.Resim2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Resim3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Durumu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Islemler = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
@@ -67,7 +74,6 @@ namespace DXApplication1
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.Garanti = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -84,31 +90,95 @@ namespace DXApplication1
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
+            // labelControl18
+            // 
+            this.labelControl18.Location = new System.Drawing.Point(584, 34);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(7, 16);
+            this.labelControl18.TabIndex = 35;
+            this.labelControl18.Text = "7";
+            // 
+            // labelControl17
+            // 
+            this.labelControl17.Location = new System.Drawing.Point(428, 34);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(14, 16);
+            this.labelControl17.TabIndex = 34;
+            this.labelControl17.Text = "44";
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Location = new System.Drawing.Point(263, 34);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(14, 16);
+            this.labelControl16.TabIndex = 33;
+            this.labelControl16.Text = "12";
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Location = new System.Drawing.Point(100, 34);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(14, 16);
+            this.labelControl15.TabIndex = 32;
+            this.labelControl15.Text = "77";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(539, 12);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(113, 16);
+            this.labelControl4.TabIndex = 31;
+            this.labelControl4.Text = "Toplam Arıza Sayısı";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(359, 12);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(136, 16);
+            this.labelControl3.TabIndex = 30;
+            this.labelControl3.Text = "Sonuçlanan Arıza Sayısı";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(204, 12);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(124, 16);
+            this.labelControl2.TabIndex = 29;
+            this.labelControl2.Text = "İşlemdeki Arıza Sayısı";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(50, 12);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(121, 16);
+            this.labelControl1.TabIndex = 28;
+            this.labelControl1.Text = "Beklenen Arıza Sayısı";
+            // 
             // searchControl1
             // 
-            this.searchControl1.Location = new System.Drawing.Point(795, 74);
+            this.searchControl1.Location = new System.Drawing.Point(805, 124);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
             new DevExpress.XtraEditors.Repository.SearchButton()});
             this.searchControl1.Size = new System.Drawing.Size(125, 22);
-            this.searchControl1.TabIndex = 62;
+            this.searchControl1.TabIndex = 58;
             // 
             // labelControl19
             // 
-            this.labelControl19.Location = new System.Drawing.Point(764, 77);
+            this.labelControl19.Location = new System.Drawing.Point(774, 127);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(25, 16);
-            this.labelControl19.TabIndex = 61;
+            this.labelControl19.TabIndex = 57;
             this.labelControl19.Text = "Ara:";
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 231);
+            this.gridControl1.Location = new System.Drawing.Point(3, 219);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(949, 424);
-            this.gridControl1.TabIndex = 60;
+            this.gridControl1.Size = new System.Drawing.Size(1027, 320);
+            this.gridControl1.TabIndex = 56;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -127,9 +197,7 @@ namespace DXApplication1
             this.Resim1,
             this.Resim2,
             this.Resim3,
-            this.Durumu,
-            this.Islemler,
-            this.Garanti});
+            this.Durumu});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.ShowAlways;
@@ -251,53 +319,44 @@ namespace DXApplication1
             this.Durumu.VisibleIndex = 12;
             this.Durumu.Width = 61;
             // 
-            // Islemler
-            // 
-            this.Islemler.Caption = "İşlemler";
-            this.Islemler.MinWidth = 25;
-            this.Islemler.Name = "Islemler";
-            this.Islemler.Visible = true;
-            this.Islemler.VisibleIndex = 13;
-            this.Islemler.Width = 68;
-            // 
             // textEdit9
             // 
-            this.textEdit9.Location = new System.Drawing.Point(551, 123);
+            this.textEdit9.Location = new System.Drawing.Point(561, 173);
             this.textEdit9.Name = "textEdit9";
             this.textEdit9.Size = new System.Drawing.Size(125, 22);
             this.textEdit9.TabIndex = 55;
             // 
             // textEdit8
             // 
-            this.textEdit8.Location = new System.Drawing.Point(410, 123);
+            this.textEdit8.Location = new System.Drawing.Point(419, 173);
             this.textEdit8.Name = "textEdit8";
             this.textEdit8.Size = new System.Drawing.Size(125, 22);
             this.textEdit8.TabIndex = 54;
             // 
             // textEdit7
             // 
-            this.textEdit7.Location = new System.Drawing.Point(278, 123);
+            this.textEdit7.Location = new System.Drawing.Point(288, 173);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Size = new System.Drawing.Size(125, 22);
             this.textEdit7.TabIndex = 53;
             // 
             // textEdit6
             // 
-            this.textEdit6.Location = new System.Drawing.Point(147, 123);
+            this.textEdit6.Location = new System.Drawing.Point(157, 173);
             this.textEdit6.Name = "textEdit6";
             this.textEdit6.Size = new System.Drawing.Size(125, 22);
             this.textEdit6.TabIndex = 52;
             // 
             // textEdit5
             // 
-            this.textEdit5.Location = new System.Drawing.Point(16, 123);
+            this.textEdit5.Location = new System.Drawing.Point(26, 173);
             this.textEdit5.Name = "textEdit5";
             this.textEdit5.Size = new System.Drawing.Size(125, 22);
             this.textEdit5.TabIndex = 51;
             // 
             // labelControl14
             // 
-            this.labelControl14.Location = new System.Drawing.Point(588, 101);
+            this.labelControl14.Location = new System.Drawing.Point(598, 151);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(45, 16);
             this.labelControl14.TabIndex = 50;
@@ -305,7 +364,7 @@ namespace DXApplication1
             // 
             // labelControl13
             // 
-            this.labelControl13.Location = new System.Drawing.Point(441, 101);
+            this.labelControl13.Location = new System.Drawing.Point(470, 151);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(60, 16);
             this.labelControl13.TabIndex = 49;
@@ -313,7 +372,7 @@ namespace DXApplication1
             // 
             // labelControl12
             // 
-            this.labelControl12.Location = new System.Drawing.Point(328, 101);
+            this.labelControl12.Location = new System.Drawing.Point(338, 151);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(33, 16);
             this.labelControl12.TabIndex = 48;
@@ -321,7 +380,7 @@ namespace DXApplication1
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(206, 101);
+            this.labelControl11.Location = new System.Drawing.Point(216, 151);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(20, 16);
             this.labelControl11.TabIndex = 47;
@@ -329,7 +388,7 @@ namespace DXApplication1
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(71, 101);
+            this.labelControl10.Location = new System.Drawing.Point(81, 151);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(7, 16);
             this.labelControl10.TabIndex = 46;
@@ -337,14 +396,14 @@ namespace DXApplication1
             // 
             // textEdit4
             // 
-            this.textEdit4.Location = new System.Drawing.Point(551, 48);
+            this.textEdit4.Location = new System.Drawing.Point(561, 98);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Size = new System.Drawing.Size(125, 22);
             this.textEdit4.TabIndex = 45;
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(565, 26);
+            this.labelControl9.Location = new System.Drawing.Point(575, 76);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(92, 16);
             this.labelControl9.TabIndex = 44;
@@ -352,14 +411,14 @@ namespace DXApplication1
             // 
             // textEdit3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(410, 48);
+            this.textEdit3.Location = new System.Drawing.Point(420, 98);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(125, 22);
             this.textEdit3.TabIndex = 43;
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(424, 26);
+            this.labelControl8.Location = new System.Drawing.Point(434, 76);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(87, 16);
             this.labelControl8.TabIndex = 42;
@@ -367,14 +426,14 @@ namespace DXApplication1
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(278, 48);
+            this.textEdit2.Location = new System.Drawing.Point(288, 98);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(125, 22);
             this.textEdit2.TabIndex = 41;
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(302, 26);
+            this.labelControl7.Location = new System.Drawing.Point(312, 76);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(75, 16);
             this.labelControl7.TabIndex = 40;
@@ -383,7 +442,7 @@ namespace DXApplication1
             // dateEdit1
             // 
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(147, 48);
+            this.dateEdit1.Location = new System.Drawing.Point(157, 98);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -394,7 +453,7 @@ namespace DXApplication1
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(179, 26);
+            this.labelControl6.Location = new System.Drawing.Point(196, 76);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(66, 16);
             this.labelControl6.TabIndex = 38;
@@ -402,33 +461,24 @@ namespace DXApplication1
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(16, 48);
+            this.textEdit1.Location = new System.Drawing.Point(26, 98);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(125, 22);
             this.textEdit1.TabIndex = 37;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(28, 26);
+            this.labelControl5.Location = new System.Drawing.Point(38, 76);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(88, 16);
             this.labelControl5.TabIndex = 36;
             this.labelControl5.Text = "Reklam Firması";
             // 
-            // Garanti
-            // 
-            this.Garanti.Caption = "Garanti";
-            this.Garanti.MinWidth = 25;
-            this.Garanti.Name = "Garanti";
-            this.Garanti.Visible = true;
-            this.Garanti.VisibleIndex = 14;
-            this.Garanti.Width = 94;
-            // 
-            // ArizaKayitlarim
+            // Raporlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 586);
+            this.ClientSize = new System.Drawing.Size(1107, 559);
             this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.labelControl19);
             this.Controls.Add(this.gridControl1);
@@ -452,8 +502,16 @@ namespace DXApplication1
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.labelControl5);
-            this.Name = "ArizaKayitlarim";
-            this.Text = "XtraForm1";
+            this.Controls.Add(this.labelControl18);
+            this.Controls.Add(this.labelControl17);
+            this.Controls.Add(this.labelControl16);
+            this.Controls.Add(this.labelControl15);
+            this.Controls.Add(this.labelControl4);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.labelControl1);
+            this.Name = "Raporlar";
+            this.Text = "Raporlar";
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -475,6 +533,14 @@ namespace DXApplication1
 
         #endregion
 
+        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.LabelControl labelControl17;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SearchControl searchControl1;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraGrid.GridControl gridControl1;
@@ -492,7 +558,6 @@ namespace DXApplication1
         private DevExpress.XtraGrid.Columns.GridColumn Resim2;
         private DevExpress.XtraGrid.Columns.GridColumn Resim3;
         private DevExpress.XtraGrid.Columns.GridColumn Durumu;
-        private DevExpress.XtraGrid.Columns.GridColumn Islemler;
         private DevExpress.XtraEditors.TextEdit textEdit9;
         private DevExpress.XtraEditors.TextEdit textEdit8;
         private DevExpress.XtraEditors.TextEdit textEdit7;
@@ -513,6 +578,5 @@ namespace DXApplication1
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraGrid.Columns.GridColumn Garanti;
     }
 }

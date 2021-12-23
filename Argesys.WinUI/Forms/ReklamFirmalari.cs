@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DXApplication1
+namespace Argesys.WinUI.Forms
 {
-    public partial class YeniArizaKaydi : DevExpress.XtraEditors.XtraForm
+    public partial class ReklamFirmalari : DevExpress.XtraEditors.XtraForm
     {
-        public YeniArizaKaydi()
+        public ReklamFirmalari()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
-namespace DXApplication1
+namespace Argesys.WinUI.Forms
 {
-    partial class ReklamFirmalari
+    partial class Markalar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,49 +29,26 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.FirmaAdi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MarkaAdi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.islemler = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.MarkaTxtEdit = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkaTxtEdit.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(113, 51);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(230, 22);
-            this.textEdit1.TabIndex = 0;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(22, 54);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(55, 16);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Firma Adı";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(416, 47);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "Ekle";
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(58, 115);
+            this.gridControl1.Location = new System.Drawing.Point(8, 79);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(595, 389);
-            this.gridControl1.TabIndex = 3;
+            this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -79,7 +56,7 @@ namespace DXApplication1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
-            this.FirmaAdi,
+            this.MarkaAdi,
             this.islemler});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -93,14 +70,14 @@ namespace DXApplication1
             this.gridColumn1.VisibleIndex = 0;
             this.gridColumn1.Width = 94;
             // 
-            // FirmaAdi
+            // MarkaAdi
             // 
-            this.FirmaAdi.Caption = "Firma Adı";
-            this.FirmaAdi.MinWidth = 25;
-            this.FirmaAdi.Name = "FirmaAdi";
-            this.FirmaAdi.Visible = true;
-            this.FirmaAdi.VisibleIndex = 1;
-            this.FirmaAdi.Width = 94;
+            this.MarkaAdi.Caption = "Marka Adı";
+            this.MarkaAdi.MinWidth = 25;
+            this.MarkaAdi.Name = "MarkaAdi";
+            this.MarkaAdi.Visible = true;
+            this.MarkaAdi.VisibleIndex = 1;
+            this.MarkaAdi.Width = 94;
             // 
             // islemler
             // 
@@ -111,20 +88,44 @@ namespace DXApplication1
             this.islemler.VisibleIndex = 2;
             this.islemler.Width = 94;
             // 
-            // ReklamFirmalari
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(402, 14);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton1.TabIndex = 6;
+            this.simpleButton1.Text = "Ekle";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(12, 21);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(57, 16);
+            this.labelControl1.TabIndex = 5;
+            this.labelControl1.Text = "Marka Adı";
+            // 
+            // MarkaTxtEdit
+            // 
+            this.MarkaTxtEdit.Location = new System.Drawing.Point(99, 18);
+            this.MarkaTxtEdit.Name = "MarkaTxtEdit";
+            this.MarkaTxtEdit.Size = new System.Drawing.Size(230, 22);
+            this.MarkaTxtEdit.TabIndex = 4;
+            // 
+            // Markalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 524);
+            this.ClientSize = new System.Drawing.Size(776, 508);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.textEdit1);
-            this.Name = "ReklamFirmalari";
-            this.Text = "Firmalar";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            this.Controls.Add(this.MarkaTxtEdit);
+            this.Name = "Markalar";
+            this.Text = "Markalar";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MarkaTxtEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,13 +133,13 @@ namespace DXApplication1
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn FirmaAdi;
+        private DevExpress.XtraGrid.Columns.GridColumn MarkaAdi;
         private DevExpress.XtraGrid.Columns.GridColumn islemler;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.TextEdit MarkaTxtEdit;
     }
 }
