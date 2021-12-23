@@ -7,17 +7,17 @@ namespace Argesys.Entities.Concrete
     public  class Product: IEntity
     {
         [Key]
-        public int Service_Id { get; set; }
-        public string Service_Name { get; set; }
-        public int Advertising_Firm_Id { get; set; }
-        public DateTime Fault_Date { get; set; }
-        public string Station_Name { get; set; }
-        public int Contact_Id { get; set; }
-        public int Brand_Id { get; set; }
+        public int ServiceId { get; set; }
+        public string ServiceName { get; set; }
+        public int AdvertisingFirmId { get; set; }
+        public DateTime FaultDate { get; set; }
+        public string StationName { get; set; }
+        public int ContactId { get; set; }
+        public int BrandId { get; set; }
         public string Province { get; set; }
         public string District { get; set; }
         public string Address { get; set; }
-        public string Fault_Description { get; set; }
+        public string FaultDescription { get; set; }
         public string Picture1 { get; set; }
         public string Picture2 { get; set; }
         public string Picture3 { get; set; }

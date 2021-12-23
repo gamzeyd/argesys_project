@@ -1,5 +1,5 @@
 ﻿
-namespace Argesys.WinUI
+namespace Argesys.WinUI.Forms
 {
     partial class Form1
     {
