@@ -9,8 +9,8 @@ namespace Argesys.Entities.Concrete
 {
    public  class Category:IEntity 
     {
-        public int CategoryId { get; set; }
-        public string CategoryName { get; set; }
+        public int Category_Id { get; set; }
+        public string Category_Name { get; set; }
 
     }
 }

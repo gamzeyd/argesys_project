@@ -20,9 +20,10 @@ namespace Argesys.WinUI
            _productService  = new ProductManager(new EfProductDal());
         }
       private IProductService _productService;
+        EfCategoryDal categoryDal = new EfCategoryDal();
         private void Form1_Load(object sender, EventArgs e)
         {
-            gridControl1.DataSource = _productService.GetAll();
+            gridControl1.DataSource = categoryDal.GetAll();
 
         }
     }

@@ -10,7 +10,7 @@ using Argesys.Entities.Concrete;
 
 namespace Argesys.DataAccess.Concrete.EntityFramework
 {
-   public class ArgesysContext:DbContext
+    public class ArgesysContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
