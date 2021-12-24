@@ -17,7 +17,7 @@ namespace Argesys.WinUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Markalar());
+            Application.Run(new ReklamFirmalari());
         }
     }
 }

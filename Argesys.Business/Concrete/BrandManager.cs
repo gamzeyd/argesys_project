@@ -12,7 +12,7 @@ namespace Argesys.Business.Concrete
     public class BrandManager : IBrandService 
     {
         private EfBrandDal _brandDal;
-        //EfProductDal _productDal = new EfProductDal();
+ 
         public BrandManager(EfBrandDal brandDal)
         {
             _brandDal = brandDal;

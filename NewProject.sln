@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXApplication1", "DXApplication1\DXApplication1.csproj", "{CACA1D0D-EEDB-4FA9-8DDE-D7152CD67AAE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argesys.WinUI", "Argesys.WinUI\Argesys.WinUI.csproj", "{395AF384-1872-48F1-B0F9-766CB4E806B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argesys.Business", "Argesys.Business\Argesys.Business.csproj", "{C142D37A-4A64-4AD8-A24F-6434D1B89580}"
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CACA1D0D-EEDB-4FA9-8DDE-D7152CD67AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CACA1D0D-EEDB-4FA9-8DDE-D7152CD67AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CACA1D0D-EEDB-4FA9-8DDE-D7152CD67AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CACA1D0D-EEDB-4FA9-8DDE-D7152CD67AAE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{395AF384-1872-48F1-B0F9-766CB4E806B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{395AF384-1872-48F1-B0F9-766CB4E806B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{395AF384-1872-48F1-B0F9-766CB4E806B7}.Release|Any CPU.ActiveCfg = Release|Any CPU

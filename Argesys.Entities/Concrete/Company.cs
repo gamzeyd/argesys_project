@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace Argesys.Entities.Concrete
 {
-    public class Brand : IEntity
-    {
-        [Key]
-    
-        public int BrandId { get; set; }
-        public string BrandName { get; set; }
-      
+  
+        public class Company : IEntity
+        {
+            [Key]
+
+            public int CompanyId { get; set; }
+            public string CompanyName { get; set; }
+        }
     }
-}
+
