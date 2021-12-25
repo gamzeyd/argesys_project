@@ -56,6 +56,8 @@
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\ICompanyDal.cs" />
     <Compile Include="Abstract\IEntityRepository.cs" />
+    <Compile Include="Abstract\IFaultDal.cs" />
+    <Compile Include="Abstract\IFaultRecordDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\EntityFramework\ArgesysContext.cs" />
@@ -63,6 +65,8 @@
     <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCompanyDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfEntityRepositoryBase.cs" />
+    <Compile Include="Concrete\EntityFramework\EfFaultDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfFaultRecordDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

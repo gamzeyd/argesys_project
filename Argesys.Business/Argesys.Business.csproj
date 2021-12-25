@@ -54,10 +54,14 @@
   <ItemGroup>
     <Compile Include="Abstract\IBrandService.cs" />
     <Compile Include="Abstract\ICompanyService.cs" />
+    <Compile Include="Abstract\IFaultRecordService.cs" />
+    <Compile Include="Abstract\IFaultService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\BrandManager.cs" />
+    <Compile Include="Concrete\FaultRecordManager.cs" />
     <Compile Include="Concrete\CompanyManager.cs" />
+    <Compile Include="Concrete\FaultManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

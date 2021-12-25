@@ -55,6 +55,8 @@
     <Compile Include="Concrete\Brand.cs" />
     <Compile Include="Concrete\Category.cs" />
     <Compile Include="Concrete\Company.cs" />
+    <Compile Include="Concrete\Fault.cs" />
+    <Compile Include="Concrete\FaultRecord.cs" />
     <Compile Include="Concrete\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

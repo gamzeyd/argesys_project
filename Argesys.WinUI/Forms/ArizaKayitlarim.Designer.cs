@@ -33,20 +33,6 @@ namespace Argesys.WinUI.Forms
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ReklamFirmasi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ArizaTarihi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.IstasyonIsmi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.İletisimYetkilisi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.KurumsalMarka = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Il = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Ilce = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Adres = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Aciklamasi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Resim1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Resim2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Resim3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Durumu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Islemler = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
@@ -61,13 +47,14 @@ namespace Argesys.WinUI.Forms
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.stationTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.companyTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.Garanti = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.updateButton = new DevExpress.XtraEditors.SimpleButton();
+            this.deleteButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -78,10 +65,10 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stationTxtEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyTxtEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // searchControl1
@@ -104,7 +91,7 @@ namespace Argesys.WinUI.Forms
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 231);
+            this.gridControl1.Location = new System.Drawing.Point(0, 226);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(949, 424);
@@ -114,151 +101,9 @@ namespace Argesys.WinUI.Forms
             // 
             // gridView1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ReklamFirmasi,
-            this.ArizaTarihi,
-            this.IstasyonIsmi,
-            this.İletisimYetkilisi,
-            this.KurumsalMarka,
-            this.Il,
-            this.Ilce,
-            this.Adres,
-            this.Aciklamasi,
-            this.Resim1,
-            this.Resim2,
-            this.Resim3,
-            this.Durumu,
-            this.Islemler,
-            this.Garanti});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.ShowAlways;
-            // 
-            // ReklamFirmasi
-            // 
-            this.ReklamFirmasi.Caption = "Reklam Firması";
-            this.ReklamFirmasi.MinWidth = 25;
-            this.ReklamFirmasi.Name = "ReklamFirmasi";
-            this.ReklamFirmasi.Visible = true;
-            this.ReklamFirmasi.VisibleIndex = 0;
-            this.ReklamFirmasi.Width = 114;
-            // 
-            // ArizaTarihi
-            // 
-            this.ArizaTarihi.Caption = "Arıza Tarihi";
-            this.ArizaTarihi.MinWidth = 25;
-            this.ArizaTarihi.Name = "ArizaTarihi";
-            this.ArizaTarihi.Visible = true;
-            this.ArizaTarihi.VisibleIndex = 1;
-            this.ArizaTarihi.Width = 79;
-            // 
-            // IstasyonIsmi
-            // 
-            this.IstasyonIsmi.Caption = "İstasyon İsmi ";
-            this.IstasyonIsmi.MinWidth = 25;
-            this.IstasyonIsmi.Name = "IstasyonIsmi";
-            this.IstasyonIsmi.Visible = true;
-            this.IstasyonIsmi.VisibleIndex = 2;
-            this.IstasyonIsmi.Width = 93;
-            // 
-            // İletisimYetkilisi
-            // 
-            this.İletisimYetkilisi.Caption = "İletişim Yetkilisi";
-            this.İletisimYetkilisi.MinWidth = 25;
-            this.İletisimYetkilisi.Name = "İletisimYetkilisi";
-            this.İletisimYetkilisi.Visible = true;
-            this.İletisimYetkilisi.VisibleIndex = 3;
-            this.İletisimYetkilisi.Width = 102;
-            // 
-            // KurumsalMarka
-            // 
-            this.KurumsalMarka.Caption = "Kurumsal Marka";
-            this.KurumsalMarka.MinWidth = 25;
-            this.KurumsalMarka.Name = "KurumsalMarka";
-            this.KurumsalMarka.Visible = true;
-            this.KurumsalMarka.VisibleIndex = 4;
-            this.KurumsalMarka.Width = 107;
-            // 
-            // Il
-            // 
-            this.Il.Caption = "İl";
-            this.Il.MinWidth = 25;
-            this.Il.Name = "Il";
-            this.Il.Visible = true;
-            this.Il.VisibleIndex = 5;
-            this.Il.Width = 37;
-            // 
-            // Ilce
-            // 
-            this.Ilce.Caption = "İlçe";
-            this.Ilce.MinWidth = 25;
-            this.Ilce.Name = "Ilce";
-            this.Ilce.Visible = true;
-            this.Ilce.VisibleIndex = 6;
-            this.Ilce.Width = 48;
-            // 
-            // Adres
-            // 
-            this.Adres.Caption = "Adres";
-            this.Adres.MinWidth = 25;
-            this.Adres.Name = "Adres";
-            this.Adres.Visible = true;
-            this.Adres.VisibleIndex = 7;
-            this.Adres.Width = 48;
-            // 
-            // Aciklamasi
-            // 
-            this.Aciklamasi.Caption = "Açıklaması";
-            this.Aciklamasi.MinWidth = 25;
-            this.Aciklamasi.Name = "Aciklamasi";
-            this.Aciklamasi.Visible = true;
-            this.Aciklamasi.VisibleIndex = 8;
-            this.Aciklamasi.Width = 74;
-            // 
-            // Resim1
-            // 
-            this.Resim1.Caption = "Resim 1";
-            this.Resim1.MinWidth = 25;
-            this.Resim1.Name = "Resim1";
-            this.Resim1.Visible = true;
-            this.Resim1.VisibleIndex = 9;
-            this.Resim1.Width = 63;
-            // 
-            // Resim2
-            // 
-            this.Resim2.Caption = "Resim 2";
-            this.Resim2.MinWidth = 25;
-            this.Resim2.Name = "Resim2";
-            this.Resim2.Visible = true;
-            this.Resim2.VisibleIndex = 10;
-            this.Resim2.Width = 59;
-            // 
-            // Resim3
-            // 
-            this.Resim3.Caption = "Resim 3";
-            this.Resim3.MinWidth = 25;
-            this.Resim3.Name = "Resim3";
-            this.Resim3.Visible = true;
-            this.Resim3.VisibleIndex = 11;
-            this.Resim3.Width = 57;
-            // 
-            // Durumu
-            // 
-            this.Durumu.Caption = "Durumu";
-            this.Durumu.MinWidth = 25;
-            this.Durumu.Name = "Durumu";
-            this.Durumu.Visible = true;
-            this.Durumu.VisibleIndex = 12;
-            this.Durumu.Width = 61;
-            // 
-            // Islemler
-            // 
-            this.Islemler.Caption = "İşlemler";
-            this.Islemler.MinWidth = 25;
-            this.Islemler.Name = "Islemler";
-            this.Islemler.Visible = true;
-            this.Islemler.VisibleIndex = 13;
-            this.Islemler.Width = 68;
             // 
             // textEdit9
             // 
@@ -365,12 +210,13 @@ namespace Argesys.WinUI.Forms
             this.labelControl8.TabIndex = 42;
             this.labelControl8.Text = "İletişim Yetkilisi";
             // 
-            // textEdit2
+            // stationTxtEdit
             // 
-            this.textEdit2.Location = new System.Drawing.Point(278, 48);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(125, 22);
-            this.textEdit2.TabIndex = 41;
+            this.stationTxtEdit.Location = new System.Drawing.Point(278, 48);
+            this.stationTxtEdit.Name = "stationTxtEdit";
+            this.stationTxtEdit.Size = new System.Drawing.Size(125, 22);
+            this.stationTxtEdit.TabIndex = 41;
+            this.stationTxtEdit.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
             // 
             // labelControl7
             // 
@@ -400,12 +246,13 @@ namespace Argesys.WinUI.Forms
             this.labelControl6.TabIndex = 38;
             this.labelControl6.Text = "Arıza Tarihi";
             // 
-            // textEdit1
+            // companyTxtEdit
             // 
-            this.textEdit1.Location = new System.Drawing.Point(16, 48);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(125, 22);
-            this.textEdit1.TabIndex = 37;
+            this.companyTxtEdit.Location = new System.Drawing.Point(16, 48);
+            this.companyTxtEdit.Name = "companyTxtEdit";
+            this.companyTxtEdit.Size = new System.Drawing.Size(125, 22);
+            this.companyTxtEdit.TabIndex = 37;
+            this.companyTxtEdit.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
             // labelControl5
             // 
@@ -415,20 +262,31 @@ namespace Argesys.WinUI.Forms
             this.labelControl5.TabIndex = 36;
             this.labelControl5.Text = "Reklam Firması";
             // 
-            // Garanti
+            // updateButton
             // 
-            this.Garanti.Caption = "Garanti";
-            this.Garanti.MinWidth = 25;
-            this.Garanti.Name = "Garanti";
-            this.Garanti.Visible = true;
-            this.Garanti.VisibleIndex = 14;
-            this.Garanti.Width = 94;
+            this.updateButton.Location = new System.Drawing.Point(654, 191);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(94, 29);
+            this.updateButton.TabIndex = 63;
+            this.updateButton.Text = "Güncelle";
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(776, 191);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(94, 29);
+            this.deleteButton.TabIndex = 64;
+            this.deleteButton.Text = "Sil";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // ArizaKayitlarim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 586);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.labelControl19);
             this.Controls.Add(this.gridControl1);
@@ -446,14 +304,15 @@ namespace Argesys.WinUI.Forms
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.textEdit3);
             this.Controls.Add(this.labelControl8);
-            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.stationTxtEdit);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.dateEdit1);
             this.Controls.Add(this.labelControl6);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.companyTxtEdit);
             this.Controls.Add(this.labelControl5);
             this.Name = "ArizaKayitlarim";
             this.Text = "XtraForm1";
+            this.Load += new System.EventHandler(this.ArizaKayitlarim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -464,10 +323,10 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stationTxtEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyTxtEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,20 +338,6 @@ namespace Argesys.WinUI.Forms
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn ReklamFirmasi;
-        private DevExpress.XtraGrid.Columns.GridColumn ArizaTarihi;
-        private DevExpress.XtraGrid.Columns.GridColumn IstasyonIsmi;
-        private DevExpress.XtraGrid.Columns.GridColumn İletisimYetkilisi;
-        private DevExpress.XtraGrid.Columns.GridColumn KurumsalMarka;
-        private DevExpress.XtraGrid.Columns.GridColumn Il;
-        private DevExpress.XtraGrid.Columns.GridColumn Ilce;
-        private DevExpress.XtraGrid.Columns.GridColumn Adres;
-        private DevExpress.XtraGrid.Columns.GridColumn Aciklamasi;
-        private DevExpress.XtraGrid.Columns.GridColumn Resim1;
-        private DevExpress.XtraGrid.Columns.GridColumn Resim2;
-        private DevExpress.XtraGrid.Columns.GridColumn Resim3;
-        private DevExpress.XtraGrid.Columns.GridColumn Durumu;
-        private DevExpress.XtraGrid.Columns.GridColumn Islemler;
         private DevExpress.XtraEditors.TextEdit textEdit9;
         private DevExpress.XtraEditors.TextEdit textEdit8;
         private DevExpress.XtraEditors.TextEdit textEdit7;
@@ -507,12 +352,13 @@ namespace Argesys.WinUI.Forms
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit stationTxtEdit;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit companyTxtEdit;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraGrid.Columns.GridColumn Garanti;
+        private DevExpress.XtraEditors.SimpleButton updateButton;
+        private DevExpress.XtraEditors.SimpleButton deleteButton;
     }
 }

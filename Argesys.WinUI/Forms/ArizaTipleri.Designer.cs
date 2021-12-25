@@ -31,20 +31,19 @@ namespace Argesys.WinUI.Forms
         {
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ArizaTipi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.islemler = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.addButton = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.ArizaTxtEdit = new DevExpress.XtraEditors.TextEdit();
+            this.updateButton = new DevExpress.XtraEditors.SimpleButton();
+            this.deleteButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArizaTxtEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 81);
+            this.gridControl1.Location = new System.Drawing.Point(26, 43);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(595, 389);
@@ -54,77 +53,68 @@ namespace Argesys.WinUI.Forms
             // 
             // gridView1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.ArizaTipi,
-            this.islemler});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // gridColumn1
+            // addButton
             // 
-            this.gridColumn1.Caption = "#";
-            this.gridColumn1.MinWidth = 25;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 94;
-            // 
-            // ArizaTipi
-            // 
-            this.ArizaTipi.Caption = "Arıza Tipi";
-            this.ArizaTipi.MinWidth = 25;
-            this.ArizaTipi.Name = "ArizaTipi";
-            this.ArizaTipi.Visible = true;
-            this.ArizaTipi.VisibleIndex = 1;
-            this.ArizaTipi.Width = 94;
-            // 
-            // islemler
-            // 
-            this.islemler.Caption = "İşlemler";
-            this.islemler.MinWidth = 25;
-            this.islemler.Name = "islemler";
-            this.islemler.Visible = true;
-            this.islemler.VisibleIndex = 2;
-            this.islemler.Width = 94;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(406, 8);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
-            this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Text = "Ekle";
+            this.addButton.Location = new System.Drawing.Point(406, 8);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(94, 29);
+            this.addButton.TabIndex = 6;
+            this.addButton.Text = "Ekle";
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 15);
+            this.labelControl1.Location = new System.Drawing.Point(46, 12);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 16);
             this.labelControl1.TabIndex = 5;
             this.labelControl1.Text = "Arıza Tipi";
             // 
-            // textEdit1
+            // ArizaTxtEdit
             // 
-            this.textEdit1.Location = new System.Drawing.Point(103, 12);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(230, 22);
-            this.textEdit1.TabIndex = 4;
+            this.ArizaTxtEdit.Location = new System.Drawing.Point(106, 9);
+            this.ArizaTxtEdit.Name = "ArizaTxtEdit";
+            this.ArizaTxtEdit.Size = new System.Drawing.Size(230, 22);
+            this.ArizaTxtEdit.TabIndex = 4;
+            // 
+            // updateButton
+            // 
+            this.updateButton.Location = new System.Drawing.Point(61, 460);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(94, 29);
+            this.updateButton.TabIndex = 8;
+            this.updateButton.Text = "Güncelle";
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(173, 460);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(94, 29);
+            this.deleteButton.TabIndex = 9;
+            this.deleteButton.Text = "Sil";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // ArizaTipleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 509);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.gridControl1);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.ArizaTxtEdit);
             this.Name = "ArizaTipleri";
             this.Text = "Arıza Tipleri";
+            this.Load += new System.EventHandler(this.ArizaTipleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArizaTxtEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,11 +124,10 @@ namespace Argesys.WinUI.Forms
 
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn ArizaTipi;
-        private DevExpress.XtraGrid.Columns.GridColumn islemler;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton addButton;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit ArizaTxtEdit;
+        private DevExpress.XtraEditors.SimpleButton updateButton;
+        private DevExpress.XtraEditors.SimpleButton deleteButton;
     }
 }
