@@ -51,10 +51,10 @@ namespace Argesys.WinUI.Forms
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.companyTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.updateButton = new DevExpress.XtraEditors.SimpleButton();
             this.deleteButton = new DevExpress.XtraEditors.SimpleButton();
+            this.companyLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -68,7 +68,7 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.stationTxtEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyTxtEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLookUpEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // searchControl1
@@ -246,14 +246,6 @@ namespace Argesys.WinUI.Forms
             this.labelControl6.TabIndex = 38;
             this.labelControl6.Text = "Arıza Tarihi";
             // 
-            // companyTxtEdit
-            // 
-            this.companyTxtEdit.Location = new System.Drawing.Point(16, 48);
-            this.companyTxtEdit.Name = "companyTxtEdit";
-            this.companyTxtEdit.Size = new System.Drawing.Size(125, 22);
-            this.companyTxtEdit.TabIndex = 37;
-            this.companyTxtEdit.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
-            // 
             // labelControl5
             // 
             this.labelControl5.Location = new System.Drawing.Point(28, 26);
@@ -280,11 +272,21 @@ namespace Argesys.WinUI.Forms
             this.deleteButton.Text = "Sil";
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
+            // companyLookUpEdit
+            // 
+            this.companyLookUpEdit.Location = new System.Drawing.Point(16, 48);
+            this.companyLookUpEdit.Name = "companyLookUpEdit";
+            this.companyLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.companyLookUpEdit.Size = new System.Drawing.Size(125, 22);
+            this.companyLookUpEdit.TabIndex = 66;
+            // 
             // ArizaKayitlarim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 586);
+            this.Controls.Add(this.companyLookUpEdit);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.searchControl1);
@@ -308,7 +310,6 @@ namespace Argesys.WinUI.Forms
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.dateEdit1);
             this.Controls.Add(this.labelControl6);
-            this.Controls.Add(this.companyTxtEdit);
             this.Controls.Add(this.labelControl5);
             this.Name = "ArizaKayitlarim";
             this.Text = "XtraForm1";
@@ -326,7 +327,7 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.stationTxtEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyTxtEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLookUpEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,9 +357,9 @@ namespace Argesys.WinUI.Forms
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit companyTxtEdit;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.SimpleButton updateButton;
         private DevExpress.XtraEditors.SimpleButton deleteButton;
+        private DevExpress.XtraEditors.LookUpEdit companyLookUpEdit;
     }
 }
