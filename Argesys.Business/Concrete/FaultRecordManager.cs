@@ -32,7 +32,10 @@ namespace Argesys.Business.Concrete
             return _faultRecordDal.GetAll();
         }
 
-        
+        public List<FaultRecord> GetRecordsByContact(string contact)
+        {
+            return _faultRecordDal.GetAll(p => p.StationNames.ToLower().Contains(contact.ToLower()));
+        }
 
         public List<FaultRecord> GetRecordsByStationName(string stationname)
         {

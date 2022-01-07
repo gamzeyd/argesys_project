@@ -33,6 +33,8 @@ namespace Argesys.WinUI.Forms
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.updateButton = new DevExpress.XtraEditors.SimpleButton();
+            this.deleteButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -40,7 +42,7 @@ namespace Argesys.WinUI.Forms
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(465, 15);
+            this.labelControl1.Location = new System.Drawing.Point(26, 12);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(20, 16);
             this.labelControl1.TabIndex = 0;
@@ -48,7 +50,7 @@ namespace Argesys.WinUI.Forms
             // 
             // searchControl1
             // 
-            this.searchControl1.Location = new System.Drawing.Point(507, 12);
+            this.searchControl1.Location = new System.Drawing.Point(52, 12);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
@@ -71,11 +73,29 @@ namespace Argesys.WinUI.Forms
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // updateButton
+            // 
+            this.updateButton.Location = new System.Drawing.Point(433, 12);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(94, 29);
+            this.updateButton.TabIndex = 3;
+            this.updateButton.Text = "Güncelle";
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(554, 12);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(94, 29);
+            this.deleteButton.TabIndex = 4;
+            this.deleteButton.Text = "Sil";
+            // 
             // Listele
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 419);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.labelControl1);
@@ -95,5 +115,7 @@ namespace Argesys.WinUI.Forms
         private DevExpress.XtraEditors.SearchControl searchControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton updateButton;
+        private DevExpress.XtraEditors.SimpleButton deleteButton;
     }
 }

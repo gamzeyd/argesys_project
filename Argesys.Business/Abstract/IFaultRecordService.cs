@@ -15,5 +15,6 @@ namespace Argesys.Business.Abstract
         void Delete(FaultRecord faultrecord);
         List<FaultRecord> GetRecordsByCompany(string company);
         List<FaultRecord> GetRecordsByStationName(string stationname);
+        List<FaultRecord> GetRecordsByContact(string contact);
     }
 }

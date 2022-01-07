@@ -45,7 +45,7 @@ namespace Argesys.WinUI.Forms
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.contactTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.stationTxtEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -64,7 +64,7 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactTxtEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stationTxtEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
@@ -195,12 +195,13 @@ namespace Argesys.WinUI.Forms
             this.labelControl9.TabIndex = 44;
             this.labelControl9.Text = "Kurumsal Marka";
             // 
-            // textEdit3
+            // contactTxtEdit
             // 
-            this.textEdit3.Location = new System.Drawing.Point(410, 48);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(125, 22);
-            this.textEdit3.TabIndex = 43;
+            this.contactTxtEdit.Location = new System.Drawing.Point(410, 48);
+            this.contactTxtEdit.Name = "contactTxtEdit";
+            this.contactTxtEdit.Size = new System.Drawing.Size(125, 22);
+            this.contactTxtEdit.TabIndex = 43;
+           
             // 
             // labelControl8
             // 
@@ -304,7 +305,7 @@ namespace Argesys.WinUI.Forms
             this.Controls.Add(this.labelControl10);
             this.Controls.Add(this.textEdit4);
             this.Controls.Add(this.labelControl9);
-            this.Controls.Add(this.textEdit3);
+            this.Controls.Add(this.contactTxtEdit);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.stationTxtEdit);
             this.Controls.Add(this.labelControl7);
@@ -323,7 +324,7 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactTxtEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stationTxtEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
@@ -351,7 +352,7 @@ namespace Argesys.WinUI.Forms
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit contactTxtEdit;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit stationTxtEdit;
         private DevExpress.XtraEditors.LabelControl labelControl7;

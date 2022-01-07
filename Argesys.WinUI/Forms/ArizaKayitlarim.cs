@@ -6,7 +6,9 @@ using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,7 +20,7 @@ namespace Argesys.WinUI.Forms
     public partial class ArizaKayitlarim : DevExpress.XtraEditors.XtraForm
     {
         private IFaultRecordService _faultRecordService;
-        private CompanyManager _companyRecords;
+        private ICompanyService _companyRecords;
 
         public ArizaKayitlarim()
         {
@@ -34,8 +36,9 @@ namespace Argesys.WinUI.Forms
 
         private void ArizaKayitlarim_Load(object sender, EventArgs e)
         {
-            LoadFaultRecords();
+           // LoadFaultRecords();
             LoadFirmalar();
+            GetFault();
         }
 
         private void LoadFaultRecords()
@@ -68,8 +71,8 @@ namespace Argesys.WinUI.Forms
 
         private void LoadFirmalar()
         {
-           
-            
+
+
             companyLookUpEdit.Properties.DataSource = _companyRecords.GetAll();
             companyLookUpEdit.Properties.DisplayMember = "CompanyName";
             companyLookUpEdit.Properties.ValueMember = "CompanyId";
@@ -92,5 +95,46 @@ namespace Argesys.WinUI.Forms
                 gridControl1.DataSource = _faultRecordService.GetRecordsByStationName(stationTxtEdit.Text);
             }
         }
+
+        private void contactTxtEdit_EditValueChanged(object sender, EventArgs e)
+        {
+            if (contactTxtEdit.Text == "")
+            {
+                LoadFaultRecords();
+
+            }
+            else
+            {
+                gridControl1.DataSource = _faultRecordService.GetRecordsByStationName(contactTxtEdit.Text);
+            }
+        }
+
+
+        public void GetFault () 
+        {
+            List<JoinFaultCompany> jc = new List<JoinFaultCompany>();
+            string mainconn = ConfigurationManager.ConnectionStrings["ArgesysContext"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+            string sqlquery = "Select f.AdvertisingFirmId,c.CompanyName FROM FaultRecords f inner join Companies c on f.AdvertisingFirmId = c.CompanyId";
+            SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
+            SqlDataAdapter sda = new SqlDataAdapter(sqlcomm);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                JoinFaultCompany jcobj = new JoinFaultCompany();
+                jcobj.CompanyName = dr["CompanyName"].ToString();
+                jcobj.FaultId = dr["AdvertisingFirmId"].ToString();
+                jc.Add(jcobj);
+
+
+
+            }
+            gridControl1.DataSource = jc;
+            
+
+        }
+
+       
     }
 }
