@@ -21,6 +21,8 @@ namespace Argesys.DataAccess.Concrete.EntityFramework
         public DbSet<Company> Companies { get; set; }
         public DbSet<Fault> Faults { get; set; }
         public DbSet<FaultRecord> FaultRecords { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+
 
 
 

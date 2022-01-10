@@ -19,6 +19,7 @@ namespace Argesys.Entities.Concrete
         public string District { get; set; }
         public string Address { get; set; }
         public string FaultDescription { get; set; }
+
        
 
     }

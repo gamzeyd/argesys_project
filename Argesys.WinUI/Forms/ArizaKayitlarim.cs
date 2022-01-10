@@ -115,7 +115,15 @@ namespace Argesys.WinUI.Forms
             List<JoinFaultCompany> jc = new List<JoinFaultCompany>();
             string mainconn = ConfigurationManager.ConnectionStrings["ArgesysContext"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
-            string sqlquery = "Select f.AdvertisingFirmId,c.CompanyName FROM FaultRecords f inner join Companies c on f.AdvertisingFirmId = c.CompanyId";
+            // string sqlquery = "Select f.AdvertisingFirmId,c.CompanyName FROM FaultRecords f inner join Companies c on f.AdvertisingFirmId = c.CompanyId";
+            string sqlquery = "Select AdvertisingFirmId, CompanyName, FaultDate, BrandName, ContactName, Address,Province, ";
+            sqlquery += "District,FaultDescription, StationNames from";
+            sqlquery += " (Select AdvertisingFirmId, CompanyName, FaultDate, BrandId, t1.ContactId, co.ContactName, Address,";
+            sqlquery += " District,Province, FaultDescription, StationNames from (Select f.AdvertisingFirmId, c.CompanyName, f.FaultDate, f.BrandId, f.ContactId, f.Address,";
+            sqlquery += " f.District,f.Province, f.FaultDescription, f.StationNames FROM FaultRecords f";
+            sqlquery += " inner join Companies c on f.AdvertisingFirmId = c.CompanyId) t1";
+            sqlquery += " inner join Contacts co on t1.ContactId = co.ContactId) t2";
+            sqlquery += " inner join Brands br on t2.BrandId = br.BrandId"; 
             SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
             SqlDataAdapter sda = new SqlDataAdapter(sqlcomm);
             DataTable dt = new DataTable();
@@ -123,8 +131,22 @@ namespace Argesys.WinUI.Forms
             foreach (DataRow dr in dt.Rows)
             {
                 JoinFaultCompany jcobj = new JoinFaultCompany();
-                jcobj.CompanyName = dr["CompanyName"].ToString();
+                
                 jcobj.FaultId = dr["AdvertisingFirmId"].ToString();
+                jcobj.CompanyName = dr["CompanyName"].ToString();
+                jcobj.FaultDate = dr["FaultDate"].ToString();
+                jcobj.BrandName = dr["BrandName"].ToString();
+                jcobj.ContactName = dr["ContactName"].ToString();
+                jcobj.Address = dr["Address"].ToString();
+                jcobj.Province = dr["Province"].ToString();
+                jcobj.District = dr["District"].ToString();
+                jcobj.FaultDescription = dr["FaultDescription"].ToString();
+                jcobj.StationNames = dr["StationNames"].ToString();
+
+
+
+
+
                 jc.Add(jcobj);
 
 
