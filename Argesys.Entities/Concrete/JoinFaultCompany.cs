@@ -20,6 +20,7 @@ namespace Argesys.Entities.Concrete
         public string Address { get; set; }
         public string FaultDescription { get; set; }
 
+
        
 
     }

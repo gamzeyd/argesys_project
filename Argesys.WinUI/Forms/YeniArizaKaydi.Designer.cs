@@ -39,7 +39,6 @@ namespace Argesys.WinUI.Forms
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -72,6 +71,7 @@ namespace Argesys.WinUI.Forms
             this.companyLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.contactLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.brandLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.illerlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
@@ -86,6 +86,7 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.companyLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brandLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.illerlookUpEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -170,14 +171,6 @@ namespace Argesys.WinUI.Forms
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(117, 22);
             this.textEdit1.TabIndex = 10;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(132, 297);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 24);
-            this.comboBox3.TabIndex = 13;
             // 
             // comboBox4
             // 
@@ -436,11 +429,21 @@ namespace Argesys.WinUI.Forms
             this.brandLookUpEdit.Size = new System.Drawing.Size(125, 22);
             this.brandLookUpEdit.TabIndex = 45;
             // 
+            // illerlookUpEdit
+            // 
+            this.illerlookUpEdit.Location = new System.Drawing.Point(128, 297);
+            this.illerlookUpEdit.Name = "illerlookUpEdit";
+            this.illerlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.illerlookUpEdit.Size = new System.Drawing.Size(125, 22);
+            this.illerlookUpEdit.TabIndex = 46;
+            // 
             // YeniArizaKaydi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 562);
+            this.Controls.Add(this.illerlookUpEdit);
             this.Controls.Add(this.brandLookUpEdit);
             this.Controls.Add(this.contactLookUpEdit);
             this.Controls.Add(this.companyLookUpEdit);
@@ -473,7 +476,6 @@ namespace Argesys.WinUI.Forms
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.textEdit3);
             this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.dateEdit1);
             this.Controls.Add(this.labelControl8);
@@ -501,6 +503,7 @@ namespace Argesys.WinUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.companyLookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactLookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brandLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.illerlookUpEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,7 +521,6 @@ namespace Argesys.WinUI.Forms
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.LabelControl labelControl9;
@@ -551,5 +553,6 @@ namespace Argesys.WinUI.Forms
         private DevExpress.XtraEditors.LookUpEdit companyLookUpEdit;
         private DevExpress.XtraEditors.LookUpEdit contactLookUpEdit;
         private DevExpress.XtraEditors.LookUpEdit brandLookUpEdit;
+        private DevExpress.XtraEditors.LookUpEdit illerlookUpEdit;
     }
 }

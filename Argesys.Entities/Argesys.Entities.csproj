@@ -60,6 +60,7 @@
     <Compile Include="Concrete\FaultRecord.cs" />
     <Compile Include="Concrete\JoinFaultCompany.cs" />
     <Compile Include="Concrete\Product.cs" />
+    <Compile Include="Concrete\Province.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
