@@ -72,8 +72,8 @@ namespace Argesys.WinUI.Forms
 
             }
 
-            comboBox4.DataSource = DataSet.Tables["Lang"].DefaultView;
-            comboBox4.DisplayMember = "Language";
+            //comboBox4.DataSource = DataSet.Tables["Lang"].DefaultView;
+           // comboBox4.DisplayMember = "Language";
         }
     }
 }
